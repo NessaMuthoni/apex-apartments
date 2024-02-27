@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Apartment Manager</title>
+    <style>
+        /* Added styles for the hover menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Modified styles for the heading */
+        .apartment-name {
+            font-size: 24px; /* Adjust size as needed */
+            color: blue;
+            text-align: center;
+            margin-right: auto;
+        }
+
+        /* Moved notification and avatar to the far end */
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Added styles for welcome message */
+        .welcome-message {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* Centered admin image */
+        .profile img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            margin-top: 10px;
+            width: 60px; /* Adjust width as needed */
+            height: 60px; /* Adjust height as needed */
+        }
+    </style>
+</head>
+<body>
+
+
+<!-- SIDEBAR -->
+<section id="sidebar">
+    <!-- Admin photo and welcome message -->
+   
+
+    <a href="#" class="brand">
+        <i class='bx bxs-building-house'></i>
+        <span class="text">Apartment Manager</span>
+    </a>
+    <a href="#" class="profile">
+        <img src="C:\Users\colloh\Downloads\download (2).jpg" alt="Admin Avatar">
+    </a>
+        <p>MR/MRS (NAME OF ADMIN)</p>
+    </div>
+    <ul class="side-menu top">
+        <li class="active">
+            <a href="#">
+                <i class='bx bxs-dashboard' ></i>
+                <span class="text">DASHBOARD</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bxs-group'></i>
+                <span class="text">TENANTS</span>
+            </a>
+            <ul class="dropdown-content">
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">View Tenant Complaints</a></li>
+                <li><a href="#">Rent Payment Status</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bxs-chart'></i>
+                <span class="text">STATISTICS</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bxs-building-house'></i>
+                <span class="text">LISTINGS</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bxs-credit-card-alt'></i>
+                <span class="text">PAYMENTS</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bxs-cog' ></i>
+                <span class="text">Settings</span>
+            </a>
+        </li>
+    </ul>
+    <ul class="side-menu">
+        <li>
+            <a href="#" class="logout">
+                <i class='bx bxs-log-out-circle' ></i>
+                <span class="text">Logout</span>
+            </a>
+        </li>
+    </ul>
+</section>
+<!-- SIDEBAR -->
+
+
+
+<!-- CONTENT -->
+<section id="content">
+    <!-- NAVBAR -->
+    <nav>
+        <a href="#" class="nav-link">Categories</a>
+        <div class="apartment-name">APEX APARTMENTS</div>
+        <a href="#" class="profile">
+            <img src="C:\Users\colloh\Downloads\download (2).jpg" alt="Admin Avatar">
+        </a>
+        <a href="#" class="notification">
+            <i class='bx bxs-bell' ></i>
+            <span class="num">8</span>
+        </a>
+    </nav>
+    <!-- NAVBAR -->
+
+
+    <!-- MAIN -->
+    <main>
+        <div class="head-title">
+            <div class="left">
+                <h1>Dashboard</h1>
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li><i class='bx bx-chevron-right' ></i></li>
+                    <li>
+                        <a class="active" href="#">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <ul class="box-info">
+            <li>
+                <i class='bx bxs-dollar-circle' ></i>
+                <span class="text">
+                    <h3>1,500,500</h3>
+                    <p>Estimated Revenue (This Month)</p>
+                </span>
+            </li>
+            <li>
+                <i class='bx bxs-calendar' ></i>
+                <span class="text">
+                    <h3>35</h3>
+                    <p>Houses Booked (Last Year)</p>
+                </span>
+            </li>
+            <li>
+                <i class='bx bxs-calendar' ></i>
+                <span class="text">
+                    <h3>10</h3>
+                    <p>Houses Booked (Last Month)</p>
+                </span>
+            </li>
+            <li>
+                <i class='bx bxs-calendar' ></i>
+                <span class="text">
+                    <h3>3</h3>
+                    <p>Houses Booked (Last Week)</p>
+                </span>
+            </li>
+        </ul>
+
+
+        <div class="table-data">
+            <div class="order">
+                <div class="head">
+                    <h3>Recent Rent Payments</h3>
+                    <i class='bx bx-search' ></i>
+                    <i class='bx bx-filter' ></i>
+                </div>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Tenant</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <img src="C:\Users\colloh\Downloads\download (3).jpg">
+                            <p>Jane Doe</p>
+                        </td>
+                        <td>2024-02-01</td>
+                        <td>15,000Ksh</td>
+                    </tr>
+                    <tr>
+                        <td>
+                          <img src="C:\Users\colloh\Downloads\download (5).jpg">
+                            <p>John Smith</p>
+                        </td>
+                        <td>2024-01-28</td>
+                        <td>15,000Ksh</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="C:\Users\colloh\Downloads\download (5).jpg">
+                            <p>Alice Johnson</p>
+                        </td>
+                        <td>2024-01-25</td>
+                        <td>13,000Ksh</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="todo">
+                <div class="head">
+                    <h3>Maintenance Requests</h3>
+                    <i class='bx bx-plus' ></i>
+                    <i class='bx bx-filter' ></i>
+                </div>
+                <ul class="todo-list">
+                    <li class="completed">
+                        <p>Request: Fix leaking tap</p>
+                        <p>Tenant: Smith Kiptoo</p>
+                        <i class='bx bx-dots-vertical-rounded' ></i>
+                    </li>
+                    <li class="completed">
+                        <p>Request: Repair broken window</p>
+                        <p>Tenant: John Kiptoo</p>
+                        <i class='bx bx-dots-vertical-rounded' ></i>
+                    </li>
+                    <li class="not-completed">
+                        <p>Request: Replace light bulb in corridor</p>
+                        <p>Tenant: Natalie Kiptoo</p>
+                        <i class='bx bx-dots-vertical-rounded' ></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <!-- MAIN -->
+</section>
+<!-- CONTENT -->
+
+</body>
+</html>
